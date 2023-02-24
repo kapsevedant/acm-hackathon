@@ -305,6 +305,9 @@ font-size:110%;
 
 @media (max-width: 576px) {
 
+  .back{
+    background: url("images/responsive-back.jpg");
+  }
 .carousel-caption {
 top: 40%;
 }
@@ -381,6 +384,7 @@ figure {
 
 @media (max-width: 576px) {
   .back{
+    background: url("images/responsive-back.jpg");
     padding-top:130px;
     padding-bottom:130px;
   }
@@ -422,7 +426,7 @@ figure {
   }
 
   .nav-link {
-    font-size: 0.9em !important;
+    font-size: 1.1em !important;
     /* color:white */
     font-weight: lighter;
     }
