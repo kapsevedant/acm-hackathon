@@ -68,9 +68,21 @@ text-shadow: 1px 1px 15px #000;
 }
 
 .register-btn{
-  padding:10px 20px;
+  padding:20px 40px;
   background-color: black;
   border:1px solid white;
+  cursor:pointer;
+}
+
+.register-btn:hover{
+  transition:all 0.5s;
+  transform:scale(1.15);
+  background-color: pink;
+  border:1px solid black;
+}
+
+.register-btn:hover a{
+  color:black;
 }
 
 .register-btn2{
@@ -82,6 +94,7 @@ text-shadow: 1px 1px 15px #000;
 .register-btn2:hover{
   background-color: #343a40;
   border:1px solid black; 
+  cursor:pointer;
 }
 
 .register-btn2:hover a{
@@ -98,6 +111,42 @@ text-shadow: 1px 1px 15px #000;
   color:white;
 }
 
+.hackathon-poster{
+  width:350px;
+  height:auto;
+  margin:auto;
+}
+
+.visit-college{
+  padding:20px 40px;
+  background-color: white;
+  border:1px solid black; 
+}
+
+.visit-college a{
+  color:black
+}
+
+.visit-college:hover{
+  background-color: #343a40;
+}
+
+.visit-college:hover a{
+  color:white;
+  text-decoration:none;
+}
+
+.card{
+  border:none;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* background:#fddce296; */
+  transition: all 0.5s;
+  height:auto
+}
+
+.card:hover{
+  transform: scale(1.09);
+}
 
 .padding {
 padding-bottom: 2rem;
@@ -120,6 +169,7 @@ padding-top: 2rem;
 
 .head2{
   font-weight:180%;
+  font-size:30px;
 }
 
 .collapse{
@@ -305,9 +355,6 @@ font-size:110%;
 
 @media (max-width: 576px) {
 
-  .back{
-    background: url("images/responsive-back.jpg");
-  }
 .carousel-caption {
 top: 40%;
 }
@@ -355,7 +402,7 @@ figure {
   height: 60%;
   margin: 0!important;
 }
-.fixed-wrap {
+/* .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
   top: 0;
@@ -376,7 +423,7 @@ figure {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
-}
+} */
 
 [class*="col-"] {
     padding: 1rem;
@@ -384,7 +431,7 @@ figure {
 
 @media (max-width: 576px) {
   .back{
-    background: url("images/responsive-back.jpg");
+    background: url("images/responsive-back1.jpg");
     padding-top:130px;
     padding-bottom:130px;
   }
@@ -399,13 +446,20 @@ figure {
     font-size:13px;
   }
 
+  .register-btn{
+    padding:10px 20px;
+  }
+  
+
   .register-btn2{
     padding:10px 20px;
-    background-color: white;
-    border:1px solid black; 
+  }
+
+  .visit-college{
+    padding:10px 20px;
   }
   .card{
-    width:300px;
+    width:250px;
     height:auto;
     margin:auto;
   }
@@ -446,6 +500,12 @@ figure {
     width:35px;
     height:35px;
     
+  }
+
+  .hackathon-poster{
+    width:250px;
+    height:auto;
+    margin:auto;
   }
   
 }
